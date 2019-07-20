@@ -1,0 +1,33 @@
+@keyframes loading {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background: black;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: $indexLoadingScreen;
+  transition: 0.5s;
+  font-size: $fontSizeHuge;
+  font-weight: bold;
+
+  .loading-text {
+    animation-name: loading;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  &.hidden {
+    opacity: 0;
+  }
+}

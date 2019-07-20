@@ -1,0 +1,29 @@
+// colour
+$black: #333;
+$white: #fff;
+$lightGrey: #eee;
+$colour: $black;
+$backgroundColour: $white;
+
+// size
+$space: 8px;
+$heightNav: 80px;
+$heightFooter: 200px;
+
+// breakpoints
+$siteWidth: 1100px;
+$tablet: 1024px;
+$mobile: 768px;
+
+// animation
+$transition: 0.35s;
+$transitionMedium: 0.6s;
+$transitionSlow: 1s;
+
+// style
+$boxShadow: 2px 2px 4px rgba(0, 0, 0, 0.33);
+
+// height
+$indexNav: 100;
+$indexMenu: 150;
+$indexLoadingScreen: 200;

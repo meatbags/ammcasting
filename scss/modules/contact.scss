@@ -1,0 +1,49 @@
+#section-contact {
+  background: $lightGrey;
+}
+
+.contact {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .contact__inner {
+    display: flex;
+    width: 100%;
+
+    .contact__pane {
+      width: 50%;
+      @include padding(2, 2);
+
+      .contact__title {
+        font-size: $fontSizeHuge;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      .contact__subtitle {
+        font-size: $fontSizeLarge;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      .contact__text {
+        @include padding(0, 2);
+        font-size: $fontSizeMedium;
+
+        a {
+          text-decoration: underline;
+        }
+      }
+
+      .contact__map {
+        iframe {
+          width: 100%;
+          height: 500px;
+        }
+      }
+    }
+  }
+}

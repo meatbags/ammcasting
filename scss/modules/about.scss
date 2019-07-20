@@ -1,0 +1,42 @@
+.about {
+  display: flex;
+  @include padding(0, 2);
+
+  .about__pane {
+    width: 60%;
+    @include padding(0, 2);
+
+    &:nth-child(2) {
+      width: 40%;
+    }
+  }
+
+  .about__title {
+    font-size: $fontSizeHuge;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .about__subtitle {
+    font-size: $fontSizeLarge;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .about__text {
+    @include padding(0, 2);
+    padding-right: $space * 4;
+    font-size: $fontSizeMedium;
+  }
+
+  .about__image {
+    width: 100%;
+    @include padding(0, 0);
+
+    img {
+      width: 100%;
+      height: auto;
+      box-shadow: $boxShadow;
+    }
+  }
+}

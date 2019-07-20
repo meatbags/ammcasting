@@ -1,0 +1,46 @@
+#section-credits {
+  background: $lightGrey;
+}
+
+.credits {
+  @include padding(0, 2);
+
+  .credit-section {
+    text-align: center;
+
+    .credit-section__title {
+      @include padding(4, 0);
+      font-size: $fontSizeHuge;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .credit-section__rows {
+      @include padding(4, 4);
+      display: flex;
+      flex-wrap: wrap;
+
+      .credit-section__row {
+        @include padding(0, 1);
+        width: 50%;
+
+        .credit-section__row-title {
+          font-size: $fontSizeLarge;
+          text-transform: uppercase;
+          font-weight: bold;
+          text-decoration: underline;
+        }
+
+        .credit-section__row-subtitle {
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        .credit-section__row-credits {
+          @include padding(0, 2);
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

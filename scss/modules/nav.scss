@@ -1,0 +1,59 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  background: $black;
+  color: $white;
+  height: $heightNav;
+  user-select: none;
+  z-index: $indexNav;
+
+  .nav__inner {
+    width: $siteWidth;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .nav__title {
+      @include padding(2, 1);
+      font-size: $fontSizeLarge;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      a {
+        display: flex;
+      }
+    }
+
+    .nav__menu {
+      display: flex;
+      align-items: flex-end;
+
+      .nav__menu-item {
+        @include padding(1.5, 1);
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: $transition;
+
+        &.active {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $siteWidth) {
+    .nav__inner {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - #{$heightNav});// - #{$space * 2});
+  background: black;
+
+  .swiper-wrapper {
+    .swiper-slide {
+      .slide-image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &.swiper-slide-active {}
+    }
+  }
+
+  .swiper-container__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    background: linear-gradient(to top, #000, transparent);
+    pointer-events: none;
+    z-index: 1;
+
+    .swiper-container__overlay-inner {
+      @include padding(2, 4);
+      width: $siteWidth;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .swiper-container__overlay-info {
+        position: relative;
+        width: 100%;
+
+        .slide-info {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          color: $white;
+          text-align: right;
+          opacity: 0;
+          transition: $transitionMedium;
+
+          .slide-title {
+            font-size: $fontSizeHuge;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 1;
+          }
+
+          &.active {
+            opacity: 1;
+          }
+        }
+      }
+
+      .swiper-pagination {
+        padding-top: $space;
+        position: relative;
+        pointer-events: all;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+
+        .swiper-pagination-bullet {
+          @include padding(0.5, 1);
+          background: none;
+          box-sizing: content-box;
+
+          .swiper-pagination-bullet__inner {
+            box-sizing: content-box;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-container__loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: black;
+    z-index: 2;
+    transition: $transitionSlow;
+    opacity: 0;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: $siteWidth) {
+    .swiper-container__overlay {
+      .swiper-container__overlay-inner {
+        width: 100%;
+      }
+    }
+  }
+}
