@@ -46,4 +46,24 @@
       width: 100%;
     }
   }
+
+  @media screen and (max-width: $mobile) {
+    .footer__inner {
+      flex-direction: column;
+      @include padding(1, 2);
+
+      .footer__social-media, .footer__copyright {
+        width: 100%;
+        @include padding(1, 2);
+      }
+
+      .footer__social-media {
+        justify-content: center;
+      }
+
+      .footer__copyright {
+        text-align: center;
+      }
+    }
+  }
 }

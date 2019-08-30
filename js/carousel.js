@@ -5,11 +5,15 @@ class Carousel {
     // create swiper
     this.swiper = new Swiper('.swiper-container', {
       init: false,
-      speed: 500,
+      speed: 900,
       effect: 'coverflow',
       loop: true,
       grabCursor: true,
-      initialSlide: Math.floor(Math.random() * document.querySelectorAll('.swiper-slide').length),
+      autoplay: {
+        delay: 2700,
+        disableOnInteration: false,
+      },
+    //  initialSlide: Math.floor(Math.random() * document.querySelectorAll('.swiper-slide').length),
       runCallbacksOnInit: true,
       pagination: {
         el: '.swiper-pagination',

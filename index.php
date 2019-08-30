@@ -47,21 +47,6 @@
               </a>
             </div>
         <?php endforeach; ?>
-        <?php
-          $work = get_field('work');
-          foreach ($work as $item): ?>
-            <div class='grid-item parallax'>
-              <a href='<?php echo $item['url']; ?>' target='_blank'>
-                <div class='grid-item__image'>
-                  <img src='<?php echo $item['image']['url']; ?>'>
-                </div>
-                <div class='grid-item__info'>
-                  <div class='grid-item__info-title'><?php echo $item['title']; ?></div>
-                  <div class='grid-item__info-subtitle'><?php echo $item['subtitle']; ?></div>
-                </div>
-              </a>
-            </div>
-        <?php endforeach; ?>
       </div>
     </div>
   </div>
@@ -112,18 +97,12 @@
       <div class='contact parallax'>
         <div class='contact__inner'>
           <div class='contact__pane'>
-            <div class='contact__map'>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d432910.26969652943!2d115.68135556230435!3d-32.039173761907946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32966cdb47733d%3A0x304f0b535df55d0!2sPerth+WA!5e0!3m2!1sen!2sau!4v1563598102406!5m2!1sen!2sau" frameborder="0" style="border:0"></iframe>
-            </div>
-          </div>
-          <div class='contact__pane'>
             <div class='contact__title'>Contact</div>
             <div class='contact__subtitle'>Annie Murtagh-Monks Casting</div>
             <div class='contact__text'>
               Casting Services Western Australia - Film, TV and TVCs<br />
               Address Line 1, Address, WA, Postcode<br />
-              Telephone: 0414 384 460<br />
-              Email: <a href='mailto:annie@anniemmcasting.com.au'>annie@anniemmcasting.com.au</a><br /><br />
+              Telephone: 0414 384 460 Email: <a href='mailto:annie@anniemmcasting.com.au'>annie@anniemmcasting.com.au</a><br /><br />
               <a href='https://www.facebook.com/ammonks' target='_blank'>Facebook</a>
               <a href='https://au.linkedin.com/in/annie-murtagh-monks-244a0818' target='_blank'>LinkedIn</a>
               <a href='https://www.imdb.com/name/nm0615426/' target='_blank'>IMDb</a>

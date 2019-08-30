@@ -20,9 +20,18 @@
       font-size: $fontSizeLarge;
       text-transform: uppercase;
       font-weight: bold;
+      line-height: 1;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: $transitionMedium;
 
       a {
         display: flex;
+      }
+
+      &.active {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
 
@@ -38,6 +47,7 @@
         opacity: 0;
         transform: translateY(-10px);
         transition: $transition;
+        line-height: 1;
 
         &.active {
           opacity: 1;
@@ -54,6 +64,21 @@
   @media screen and (max-width: $siteWidth) {
     .nav__inner {
       width: 100%;
+    }
+  }
+
+  @media screen and (max-width: $mobile) {
+    .nav__inner {
+      .nav__title {
+        @include padding(2, 1);
+        width: 60%;
+        //display: flex;
+        //justify-content: center;
+      }
+
+      .nav__menu {
+        display: none;
+      }
     }
   }
 }

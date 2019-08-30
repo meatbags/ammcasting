@@ -31,6 +31,22 @@
 			</div>
 		</div>
 	</div>
+	<div class='mobile-menu-button'>
+		<div class='mobile-menu-button__inner'>
+			<div class='mobile-menu-button__bar'></div>
+			<div class='mobile-menu-button__bar'></div>
+			<div class='mobile-menu-button__bar'></div>
+		</div>
+	</div>
+	<div class='mobile-menu'>
+		<div class='mobile-menu__inner'>
+			<div class='mobile-menu__menu-item' data-target='#section-home'>Home</div>
+			<div class='mobile-menu__menu-item' data-target='#section-work'>Work</div>
+			<div class='mobile-menu__menu-item' data-target='#section-credits'>Credits</div>
+			<div class='mobile-menu__menu-item' data-target='#section-about'>About</div>
+			<div class='mobile-menu__menu-item' data-target='#section-contact'>Contact</div>
+		</div>
+	</div>
 	<div class='loading-screen'>
 		<div class='loading-text'>Loading</div>
 	</div>

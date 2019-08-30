@@ -13,6 +13,7 @@
       font-size: $fontSizeHuge;
       font-weight: bold;
       text-transform: uppercase;
+      text-decoration: underline;
     }
 
     .credit-section__rows {
@@ -39,6 +40,23 @@
         .credit-section__row-credits {
           @include padding(0, 2);
           text-transform: uppercase;
+          text-align: left;
+          line-height: 1;
+          font-size: $fontSize - 1px;
+
+          p {
+            @include margin(0, 0.75);
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $mobile) {
+    .credit-section {
+      .credit-section__rows {
+        .credit-section__row {
+          width: 100%;
         }
       }
     }

@@ -15,4 +15,10 @@
       width: 100%;
     }
   }
+
+  @media screen and (max-width: $mobile) {
+    .section__inner {
+      @include padding(1, 2);
+    }
+  }
 }

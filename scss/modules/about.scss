@@ -39,4 +39,33 @@
       box-shadow: $boxShadow;
     }
   }
+
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+
+    .about__pane {
+      width: 100% !important;
+      @include padding(1, 0);
+    }
+
+    .about__title {
+      line-height: 1;
+      border-bottom: 1px solid black;
+      padding-bottom: $space;
+    }
+
+    .about__subtitle {
+      line-height: 1;
+      padding-top: $space;
+    }
+
+    .about__text {
+      padding: 0;
+      padding-top: $space;
+    }
+
+    .about__image {
+      @include padding(2, 0);
+    }
+  }
 }

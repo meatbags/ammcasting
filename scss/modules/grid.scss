@@ -5,24 +5,27 @@
   user-select: none;
 
   .grid-item {
-    @include padding(2, 4);
+    @include padding(4, 6);
     width: 25%;
     display: flex;
     justify-content: center;
+    align-items: center;
     transition: opacity $transitionMedium, transform $transitionMedium;
 
     a {
+      width: 100%;
+      height: 100%;
       flex-direction: column;
+      justify-content: center;
 
       .grid-item__image {
-        display: flex;
-        transition: $transitionMedium;
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-        display: flex;
+        width: 100%;
 
         img {
           width: 100%;
           height: auto;
+          transition: $transitionMedium;
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
         }
       }
 
@@ -44,9 +47,24 @@
 
       a {
         .grid-item__image {
-          box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+          img {
+            box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+          }
         }
       }
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    .grid-item {
+      @include padding(1.5, 3);
+    }
+  }
+
+  @media screen and (max-width: $mobile) {
+    .grid-item {
+      @include padding(1, 1);
+      width: 50%;
     }
   }
 }
