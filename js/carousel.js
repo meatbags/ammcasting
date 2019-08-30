@@ -10,7 +10,7 @@ class Carousel {
       loop: true,
       grabCursor: true,
       autoplay: {
-        delay: 2700,
+        delay: 2750,
         disableOnInteration: false,
       },
     //  initialSlide: Math.floor(Math.random() * document.querySelectorAll('.swiper-slide').length),
