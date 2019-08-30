@@ -100,12 +100,12 @@
             <div class='contact__title'>Contact</div>
             <div class='contact__subtitle'>Annie Murtagh-Monks Casting</div>
             <div class='contact__text'>
-              Casting Services Western Australia - Film, TV and TVCs<br />
-              Address Line 1, Address, WA, Postcode<br />
-              Telephone: 0414 384 460 Email: <a href='mailto:annie@anniemmcasting.com.au'>annie@anniemmcasting.com.au</a><br /><br />
-              <a href='https://www.facebook.com/ammonks' target='_blank'>Facebook</a>
+              Casting Services Western Australia - Film, Theatre, TV and TVCs<br />
+              Studio 228 Hancock St Doubleview, Perth WA 6019<br />
+              Email: <a href='mailto:casting@anniemmcasting.com.au'>casting@anniemmcasting.com.au</a><br /><br />
               <a href='https://au.linkedin.com/in/annie-murtagh-monks-244a0818' target='_blank'>LinkedIn</a>
               <a href='https://www.imdb.com/name/nm0615426/' target='_blank'>IMDb</a>
+              <a href='https://pro.imdb.com/name/nm0615426/' target='_blank'>IMDbPro</a>
             </div>
           </div>
         </div>
