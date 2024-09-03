@@ -72,6 +72,27 @@
       </div>
     </div>
   </div>
+  <div id='section-media' class='section'>
+    <div class='section__inner'>
+      <div class='grid'>
+        <?php
+          $media = get_field('media');
+          foreach ($media as $item): ?>
+            <div class='grid-item parallax'>
+              <a href='<?php echo $item['link']; ?>' target='_blank'>
+                <div class='grid-item__image'>
+                  <img src='<?php echo $item['image']['url']; ?>'>
+                </div>
+                <div class='grid-item__info'>
+                  <div class='grid-item__info-title'><?php echo $item['title']; ?></div>
+                  <div class='grid-item__info-subtitle'><?php echo $item['subtitle']; ?></div>
+                </div>
+              </a>
+            </div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </div>
   <div id='section-about' class='section'>
     <div class='section__inner'>
       <?php
